@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            top: 200px;
+            left: 35%;
+            padding: 0%;
+            border: 2px solid black;
+            width: 600px;
+            height: 450px;
+        }
+        .sidehoverbar div{
+            position: relative;
+            margin-left: 12px;
+            padding: 10px;
+        }
+        .sidehoverbar div{
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 0px 4px 4px 0px;
+        left: -12px;
+        transition:0.5s;
+        opacity: 0.8;
+        }
+        .sidehoverbar div:hover{
+            opacity: 1.5;
+            width: 60px;
+            left: -12px;
+        }
+        .one{
+            cursor: pointer;
+            background-color:green ;
+            top: 22px;
+            width: 32px;
+            height: 35px;
+        }
+        .two{
+            cursor: pointer;
+            background-color: blue;
+            top: 30px;
+            width: 32px;
+            height: 35px;
+        }
+        .three{
+            cursor: pointer;
+            background-color: orangered;
+            top: 38px;
+            width: 32px;
+            height: 35px;
+        }
+        .four{
+            cursor: pointer;
+            background-color:darkgrey ;
+            top: 46px;
+            width: 32px;
+            height: 35px;
+        }
+        .hoverable-topic{
+            position: relative;
+            top: -220px;
+            left: 90px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidehoverbar">
+        <div class="one"><a href="#"></a></div>
+        <div class="two"><a href="#"></a></div>
+        <div class="three"><a href="#"></a></div>
+        <div class="four"><a href="#"></a></div>
+    </div>
+    <div class="hoverable-topic">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them</p>
+    </div>
+</div>
+
+</body>
+</html>

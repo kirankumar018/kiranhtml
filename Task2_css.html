@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    nav{
+        background-color: lightgrey;
+        overflow: hidden;
+        
+        margin: 10px;
+    }
+    .nav-list{
+        display: flex;
+        list-style-type: none;
+    }
+    .nav-list{
+        float: left;
+    }
+
+    .nav-list li a{
+        display: block;
+        
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+.sidenav {
+    height: 250px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:skyblue;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 150px;
+    margin-left: 10px;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: orangered;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div style="border: solid black;">
+    <nav>
+        <ul class="nav-list" style="padding-left: 1200px;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="sidenav" style="border: solidblack;" >
+    <a href="#home">Home</a>
+    <a href="#java">Java</a>
+    <a href="#css">CSS</a>
+    <a href="#html">HTML</a>
+    <a href="#bootstrap">Bootstrap</a>
+
+</div>
+</body>
+</html>

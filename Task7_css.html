@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-container {
+            width: 600px; 
+            height: 500px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px; 
+            border: 1px solid black;
+            background-color:rgba(169, 9, 84, 0.889);
+            box-sizing: border-box; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        .container {
+            width: 300px; 
+            padding: 20px;
+            border: 1px solid black;
+            background-color: rgb(126, 33, 74);
+            border-radius: 5px;
+        }
+        .form {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            margin-right: 10px;
+            min-width: 100px;
+        }
+        input, select {
+            padding: 5px;
+            flex: 1;
+            
+        }
+        input[type="radio"] {
+            width: auto;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .gender-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="outer-container">
+            <div class="container">
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="your name" style="padding-left: 10px;">
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your email" style="padding-left: 10px;">
+                </div>
+                <div class="form">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        Male <input type="radio" id="male" name="gender" value="male"> 
+                        Female <input type="radio" id="female" name="gender" value="female"> 
+                        Others <input type="radio" id="others" name="gender" value="others">
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="lan">Language:</label>
+                    <select id="lan" name="language" style="padding: 5px;">
+                        <option value="">Select language</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="english">English</option>
+                        <option value="french">French</option>
+                        <option value="kannada">Kannada</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="korean">Korean</option>
+                        <option value="german">German</option>
+                        <option value="mexican">Mexican</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+                <div class="form">
+                    <label for="about">About:</label>
+                    <input type="text" id="about" name="about" placeholder="Write about yourself.....">
+                </div>
+                <div>
+                    <button style="width: 300px; height: 35px; border-radius: 5px;box-shadow: 25px;"> <b>Register</b></button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
